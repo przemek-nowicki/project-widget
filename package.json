@@ -1,0 +1,31 @@
+{
+  "name": "widget-project",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "build-app": "node tasks/build.app.js",
+    "build-vendor": "node tasks/build.vendor.js",
+    "build": "npm run build-app & npm run build-vendor",
+    "start": "npm run build & node server.js"
+  },
+  "repository":{
+    "type": "git",
+    "url": "https://github.com/przemek-nowicki/widget-project.git"
+  },
+  "author": "Przemek Nowicki",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.6.1",
+    "angular-ui-router": "^0.4.2",
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.22.0",
+    "babelify": "^7.3.0",
+    "browserify": "^14.0.0",
+    "connect-modrewrite": "^0.9.0",
+    "express": "^4.14.0"
+  },
+  "keywords": [],
+  "description": ""
+}
