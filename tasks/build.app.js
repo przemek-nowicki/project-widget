@@ -13,7 +13,7 @@ function buildApp() {
     _.each(dependencies(), function(lib) {
         browserifyBundle.external(lib);
     });
-    browserifyBundle.bundle().pipe(fs.createWriteStream('static/app.js'));
+    browserifyBundle.bundle().pipe(fs.createWriteStream('static/js/app.js'));
 }
 
 buildApp();

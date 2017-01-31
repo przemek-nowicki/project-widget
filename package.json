@@ -5,10 +5,12 @@
   "scripts": {
     "build-app": "node tasks/build.app.js",
     "build-vendor": "node tasks/build.vendor.js",
-    "build": "npm run build-app & npm run build-vendor",
-    "start": "npm run build & node server.js"
+    "build-css": "node-sass src/assets/styles/ -o static/css",
+    "build": "npm run build-app & npm run build-vendor && npm run build-css",
+    "start": "npm run build & npm run serve",
+    "serve": "node server.js"
   },
-  "repository":{
+  "repository": {
     "type": "git",
     "url": "https://github.com/przemek-nowicki/widget-project.git"
   },
@@ -24,7 +26,8 @@
     "babelify": "^7.3.0",
     "browserify": "^14.0.0",
     "connect-modrewrite": "^0.9.0",
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "node-sass": "^4.4.0"
   },
   "keywords": [],
   "description": ""

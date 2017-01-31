@@ -6,10 +6,12 @@ var path = require('path');
 var app = express();
 
 var listenPort = getListenPort();
+var basePath = path.join(__dirname, 'static');
 
 app.use('/', express.static('static'));
 app.use('/', express.static('src'));  // added only temporally
-
+app.use("/css",  express.static(path.join(basePath, 'css')));
+app.use("/js",  express.static(path.join(basePath, 'js')));
 app.all('/*', function(req, res, next) {
     res.sendFile('index.html', { root: path.join(__dirname, 'static') });
 });

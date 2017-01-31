@@ -10,7 +10,7 @@ function buildVendor() {
     _.each(dependencies(), function(lib) {
         browserifyBundle.require(lib);
     });
-    browserifyBundle.bundle().pipe(fs.createWriteStream('static/vendor.js'));
+    browserifyBundle.bundle().pipe(fs.createWriteStream('static/js/vendor.js'));
 }
 
 buildVendor();
