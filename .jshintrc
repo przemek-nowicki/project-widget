@@ -1,0 +1,11 @@
+{
+	"node": true,
+	"browserify": true,
+	"jasmine": true,
+	"esversion": 6,
+	"quotmark": "single",
+	"varstmt": "false",
+	"globals": {
+	  "angular": true
+	}
+}

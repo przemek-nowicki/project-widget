@@ -1,5 +1,7 @@
 'use strict';
 
+import * as angular from 'angular';
+
 import HomeCtrl from './home.ctrl';
 
 const homeModule = angular

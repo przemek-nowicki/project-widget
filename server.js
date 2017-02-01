@@ -1,12 +1,12 @@
 'use strict';
 
-var _ = require('lodash');
-var express = require('express');
-var path = require('path');
-var app = express();
+const _ = require('lodash');
+const express = require('express');
+const path = require('path');
+const app = express();
 
-var listenPort = getListenPort();
-var basePath = path.join(__dirname, 'static');
+const listenPort = getListenPort();
+const basePath = path.join(__dirname, 'static');
 
 app.use('/', express.static('static'));
 app.use("/css",  express.static(path.join(basePath, 'css')));

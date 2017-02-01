@@ -2,12 +2,10 @@
 
 import * as angular from 'angular';
 
-import API from './api.constants';
-import STATE from './state.constnats.js';
+import SessionService from './session.service';
 
-const constantsModule = angular
-    .module('widgetProject.constants', [])
-    .constant('API', API)
-    .constant('STATE', STATE);
+const securityModule = angular
+    .module('widgetProject.security', [])
+    .service('sessionService', SessionService);
 
-export default constantsModule;
+export default securityModule;

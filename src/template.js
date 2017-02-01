@@ -7,7 +7,7 @@ import angular from 'angular';
 const templatesModule = angular
 	.module('widgetProject.template', [])
 	.run(['$templateCache', function($templateCache) {
-		$templateCache.put('home/home.ctrl.html', 'Home content');
+		$templateCache.put('home/home.ctrl.html', '<p>Welcome</p>');
 
 		$templateCache.put('template/footer.html', '<h1>Footer</h1>');
 

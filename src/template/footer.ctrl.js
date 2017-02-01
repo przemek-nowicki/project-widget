@@ -1,7 +1,5 @@
 'use strict';
 
-function FooterCtrl() {
-    console.log("footer!");
-}
-
-export default FooterCtrl;
+export default () => {
+    console.log('footer!');
+};

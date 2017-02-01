@@ -7,7 +7,7 @@ import 'angular-ui-router';
 import './constants';
 import './route';
 import './home';
-import './template'
+import './template';
 
 angular
     .module('widgetProject', [

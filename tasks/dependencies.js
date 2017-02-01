@@ -1,9 +1,6 @@
 'use strict';
 
-var _ = require('lodash');
-var path = require('path');
+const _ = require('lodash');
+const path = require('path');
 
-module.exports = function getDependencies() {
-    var dependencies = require(path.join(__dirname, '..', 'package.json')).dependencies;
-    return _.keys(dependencies);
-};
+module.exports = () => _.keys(require(path.join(__dirname, '..', 'package.json')).dependencies);

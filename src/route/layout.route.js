@@ -22,7 +22,7 @@ function LayoutRoute($stateProvider) {
 					controller: 'FooterCtrl'
 				}
 			}
-		})
+		});
 }
 
 export default LayoutRoute;
